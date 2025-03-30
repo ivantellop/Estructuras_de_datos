@@ -14,3 +14,9 @@ const agregarProducto = (producto) => {
     alert(`${producto} ya está en la lista.`);
   }
 };
+
+// Función para eliminar producto
+const eliminarProducto = (producto) => {
+  listaDeCompras = listaDeCompras.filter((item) => item !== producto);
+  actualizarLista();
+};
