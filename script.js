@@ -39,3 +39,10 @@ const actualizarLista = () => {
     lista.appendChild(li);
   });
 };
+
+// Función para agregar producto desde input
+const agregarDesdeInput = () => {
+  const input = document.getElementById("productoInput");
+  agregarProducto(input.value);
+  input.value = "";
+};
